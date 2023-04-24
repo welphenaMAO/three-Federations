@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "declaration": false,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "listEmittedFiles": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "CommonJS",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+    // "noUnusedParameters": true,
+    "strict": true,
+    "removeComments": true,
+    "pretty": true,
+    "strictPropertyInitialization": true,
+    "downlevelIteration": true,
+    "target": "es5",
+    "rootDir": "src/",
+    "baseUrl": "src",
+    "outDir": "dist/",
+    "paths": {
+        "/*": ["./*"],
+        "@vant/weapp/*": ["node_modules/@vant/weapp/dist/*"]
+    },
+    "lib": ["es7"],
+    "typeRoots": ["typings"],
+    "types": ["@dragongate/miniprogram-api-typings"]
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    // 源文件的单元测试
+    "../*.spec.ts"
+  ],
+  "suppressImplicitAnyIndexErrors": true
+}

@@ -1,0 +1,14 @@
+/* Prod 生产环境配置文件 */
+{
+    "var": {
+        "APP_ID": "{{package.appid}}", // 生产环境  小程序 AppID
+        "VERSION": "{{package.version}}", // 使用当前package.json中的version字段进行替换
+        "SERVER_NAME": "prod",
+        "NAME": "{{package.title}}",
+    },
+    "exclude": ["src/**/**.bak/**", "src/**/**.bak*.*"], // 排除一下副本
+}
+
+
+
+
