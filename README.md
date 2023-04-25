@@ -63,6 +63,10 @@ yarn start
 
 ### Languages [编程语言]
 
+### git commit 格式
+
+- 请查看 git commit 提交规范：[git commit](https://github.com/woai3c/Front-end-articles/blob/master/git%20commit%20style.md)。
+
 #### js
 
 - `.ts`(TypeScript) 或 `.js`(JavaScript) (**推荐`ts`**)
@@ -110,70 +114,3 @@ yarn start
 
 - Azure Pipelines 按需修改 [配置 azure-pipelines.yml](azure-pipelines.yml)
 - Travis-CI 按需修改 [配置 .travis.yml](.travis.yml)
-
-## 坑
-
-## 自定义组件中不能应用全局样式的问题（如 app.wxss / iconfont.wxss）
-
-**解决办法：在组件的 `.styl` 文件中，在头部加入 `@import '../../iconfont.css'`**
-
-原理
-
-stylus 编译时会保留 @import css 字面量，gulp 会寻找 `@import 'xxx.css'` 将其替换为 `@import 'xxx.wxss'` 以支持小程序方式导入样式
-
-然后就可以愉快的在组件中使用全局样式啦！
-
-## 微信开发者工具在 Mac 上无法编译的问题
-
-**解决办法：关闭自定义编译前命令选项**，因为本项目使用 gulp 自动构建，无需该选项
-
- 在 Mac 上执行编译前命令时，会找不到环境变量。
-
-    正在执行自定义编译前命令...
-    env: node: No such file or directory
-
-根据官方介绍，
-
-> 2. Mac 版本的开发者工具无法复用 bash 中的 Path 环境变量。可能需要手动设置系统的 Path 环境变量，才能正常执行命令。
-
-然而并不知道如何手动设置环境变量，临时解决办法，直接使用你本地的 node 启动相应的文件。
-
-```sh
-/Users/welphenAmao/.nvm/versions/node/v10.15.3/bin/node ./node_modules/typescript/lib/tsc.js
-```
-
-## button 组件无法去除边框及圆角的问题
-
-在 `button` 中设置以下内容时还是有边框和圆角出现。
-
-```css
-button {
-  border: none;
-  border-radius: 0;
-}
-```
-
-**解决办法:**
-
-```css
-button {
-  border: none;
-  border-raidus: 0;
-}
-button::after {
-  border: none;
-  border-raidus: 0;
-}
-```
-
-## 小程序中无法使用 wxss @keyframes 关键字的问题
-
-是因为微信开发者工具中的样式自动补全问题，会加入 `-moz-` 前缀导致显示错误。
-
-**解决办法：** 关闭开发者工具中的 “上传代码时样式自动补全”，并且使用自己的 autoprefixer 工具进行打包
-
-## 小程序中的官方组件 scroll-view 加上 position:fixed(可视窗口定位)后滚动失效
-
-原因暂时不祥，网友提供资料是微信小程序的 BUG，会导致 page 吃掉带 fixed 的 scroll-view 的滚动事件
-
-**解决办法：**将 scroll-view 替换成 view，加上样式 verflow-x（y）:scroll;就可以滑动了，记得设置滑动方向的具体宽（高）度

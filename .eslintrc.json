@@ -1,0 +1,68 @@
+{
+    "root": true,
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser",
+      "project": "tsconfig.json",
+      "tsconfigRootDir": "./"
+    },
+    "plugins": ["prettier", "@typescript-eslint"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended",
+      "prettier",
+      "prettier/standard",
+      "prettier/@typescript-eslint"
+    ],
+    "rules": {
+      "prettier/prettier": "warn",
+      "no-console": "off",
+      "no-dupe-class-members": "off",
+      "@typescript-eslint/no-object-literal-type-assertion": 0,
+      "@typescript-eslint/no-namespace": 0,
+      "@typescript-eslint/camelcase": 0,
+      "@typescript-eslint/no-explicit-any": 0,
+      "@typescript-eslint/no-triple-slash-reference": 0,
+      "@typescript-eslint/generic-type-naming": 1,
+      "@typescript-eslint/member-ordering": 1,
+      "@typescript-eslint/no-extraneous-class": [2, {}],
+      "@typescript-eslint/no-this-alias": [
+        1,
+        {
+          "allowedNames": []
+        }
+      ],
+      "@typescript-eslint/no-for-in-array": 1,
+      "@typescript-eslint/no-non-null-assertion": 0,
+      "@typescript-eslint/no-unnecessary-qualifier": 0,
+      "@typescript-eslint/no-unnecessary-type-assertion": [
+        0,
+        {
+          "typesToIgnore": []
+        }
+      ],
+      "@typescript-eslint/prefer-function-type": 0,
+      "@typescript-eslint/explicit-function-return-type": 0
+    },
+    "env": {
+      "es6": true
+    },
+    "globals": {
+      "module": "readonly",
+      "App": "readonly",
+      "Page": "readonly",
+      "Component": "readonly",
+      "Behavior": "readonly",
+      "wx": "readonly",
+      "getApp": "readonly",
+      "getCurrentPages": "readonly",
+      "console": "readonly",
+      "setTimeout": "readonly",
+      "clearTimeout": "readonly",
+      "setInterval": "readonly",
+      "clearInterval": "readonly",
+      "getRegExp": "readonly",
+      "getDate": "readonly"
+    }
+}
+  
