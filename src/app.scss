@@ -1,16 +1,16 @@
 @import 'var';
 
 .container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 200rpx 0;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 200rpx 0;
 }
 page {
-    .usermotto {
-        background: skyblue;
-    }
+  .usermotto {
+    background: skyblue;
+  }
 }

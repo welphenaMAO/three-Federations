@@ -1,6 +1,6 @@
 # THREE-FEDERATIONS + mini-program (typescript version)
 
-ThinkSNS+ 小程序, 使用 TypeScript 构建, 含更完善的小程序 Types 和 ThinkSNS Types 定义.
+THREE-FEDERATIONS + 小程序, 使用 TypeScript 构建, 含更完善的小程序 Types 和 THREE-FEDERATIONS Types 定义.
 
 > Built by [miniprogram-build](https://github.com/NewFuture/miniprogram-build)
 > Types via [@dragongate/miniprogram-api-typings](https://github.com/MS-DG/api-typings)

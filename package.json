@@ -2,7 +2,7 @@
   "?title": "小程序的项目名称(替换默认标题)",
   "title": "一支冲云箭",
   "?appid": "小程序的APPID",
-  "appid": "wx65b18acf4fc54785",
+  "appid": "",
   "name": "three-federations",
   "version": "1.0.0",
   "description": "domo for wechat-miprogram",

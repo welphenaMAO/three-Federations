@@ -1,12 +1,10 @@
 {
-  "pages": [
-    "pages/index/index"
-  ],
+  "pages": ["pages/index/index"],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "{{NAME}}",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
   },
   "networkTimeout": {
     "request": 10000,
@@ -14,5 +12,5 @@
   },
   "debug": true,
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
 }
