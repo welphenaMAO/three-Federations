@@ -14,7 +14,7 @@
   "license": "MIT",
   "main": "dist/app.js",
   "scripts": {
-    "dev": "npm run start:dev",
+    "dev": "husky install && npm run start:dev",
     "start": "npm run start:dev",
     "start:dev": "miniprogram-build --config env/dev.jsonc",
     "start:prod": "miniprogram-build --config env/prod.jsonc",
@@ -39,6 +39,7 @@
     "stylelint-check": "stylelint-config-prettier-check",
     "pretest": "npm run stylelint-check && npm run eslint-check",
     "test": "npm run build && npm run check",
+    "prepare": "husky install",
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
