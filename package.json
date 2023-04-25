@@ -2,13 +2,13 @@
   "?title": "小程序的项目名称(替换默认标题)",
   "title": "一支冲云箭",
   "?appid": "小程序的APPID",
-  "appid": "xxxx",
+  "appid": "wx65b18acf4fc54785",
   "name": "three-federations",
   "version": "1.0.0",
   "description": "domo for wechat-miprogram",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/welphenaMAO/three-Federations.git"
   },
   "author": "welphenAmao <825878657@qq.com>",
   "license": "MIT",
