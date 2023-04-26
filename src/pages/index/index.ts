@@ -2,6 +2,7 @@
 // 获取应用实例
 const app = getApp()
 
+console.log('app ??', app)
 Page({
   data: {
     motto: 'Hello World',
@@ -19,6 +20,7 @@ Page({
     })
   },
   onLoad() {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
     // @ts-ignore
     if (wx.getUserProfile) {
       this.setData({

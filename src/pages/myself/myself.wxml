@@ -1,4 +1,4 @@
 <!-- index.wxml -->
 <view class="container">
-  <view>首页</view>
+  <view>我的</view>
 </view>

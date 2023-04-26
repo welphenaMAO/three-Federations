@@ -28,12 +28,24 @@
     "baseUrl": "src",
     "outDir": "dist/",
     "paths": {
-        "/*": ["./*"],
-        "@vant/weapp/*": ["node_modules/@vant/weapp/dist/*"]
+      "/*": [
+        "./*"
+      ],
+      "@vant/weapp/*": [
+        "node_modules/@vant/weapp/dist/*"
+      ]
     },
-    "lib": ["es7"],
-    "typeRoots": ["typings"],
-    "types": ["@dragongate/miniprogram-api-typings"]
+    "lib": [
+      "es7"
+    ],
+    "typeRoots": [
+      "typings"
+    ],
+    "types": [
+      "@dragongate/miniprogram-api-typings",
+      // 添加多一层，防止没有reference
+      "domo"
+    ]
   },
   "include": [
     "src/**/*.ts"

@@ -1,16 +1,60 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": [
+    "pages/index/index",
+    "pages/hot_group/hot_group",
+    "pages/classif/classif",
+    "pages/spread/spread",
+    "pages/myself/myself"
+  ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "{{NAME}}",
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "black"
   },
   "networkTimeout": {
     "request": 10000,
-    "downloadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#afafaf",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/tabbar/home_active.png",
+        "iconPath": "images/tabbar/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tabbar/hot_group_active.png",
+        "iconPath": "images/tabbar/hot_group.png",
+        "pagePath": "pages/hot_group/hot_group",
+        "text": "热门拼团"
+      },
+      {
+        "selectedIconPath": "images/tabbar/classif_active.png",
+        "iconPath": "images/tabbar/classif.png",
+        "pagePath": "pages/classif/classif",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "images/tabbar/spread_active.png",
+        "iconPath": "images/tabbar/spread.png",
+        "pagePath": "pages/spread/spread",
+        "text": "推广"
+      },
+      {
+        "selectedIconPath": "images/tabbar/myself_active.png",
+        "iconPath": "images/tabbar/myself.png",
+        "pagePath": "pages/myself/myself",
+        "text": "我的"
+      }
+    ]
   },
   "debug": true,
   "style": "v2",
-  "sitemapLocation": "sitemap.json",
+  "sitemapLocation": "sitemap.json"
 }

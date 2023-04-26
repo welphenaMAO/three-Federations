@@ -1,5 +1,11 @@
 // import 'umtrack-wx'
+import { $event } from './utils/util'
+// import { userApi } from './api/user'
 
+console.log('$event ??', $event)
+// userApi.getUser(1).then((res) => {
+//   console.log('res ??', res)
+// })
 // app.ts
 App({
   globalData: {},

@@ -1,4 +1,4 @@
 <!-- index.wxml -->
 <view class="container">
-  <view>首页</view>
+  <view>分类</view>
 </view>

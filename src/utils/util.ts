@@ -1,3 +1,16 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
+import { EventBus } from './event'
+
+/** 事件总线 */
+export const $event = new EventBus()
+
+/** url 拼接 */
+export const serialize = (obj: IAnyObject) => {
+  return Object.keys(obj)
+    .map((k) => `${k}=${encodeURIComponent(obj[k])}`)
+    .join('&')
+}
+
 export const formatTime = (date: Date) => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
