@@ -61,11 +61,12 @@ yarn start
 
 需要安装推荐的插件 (在插件栏-推荐的插件)
 
-### Languages [编程语言]
-
 ### git commit 格式
 
 - 请查看 git commit 提交规范：[git commit](https://github.com/woai3c/Front-end-articles/blob/master/git%20commit%20style.md)。
+
+### Languages [编程语言]
+
 
 #### js
 
